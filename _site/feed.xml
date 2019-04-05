@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VoidWalker</title>
+    <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 05 Apr 2019 16:19:16 +0800</pubDate>
+    <lastBuildDate>Fri, 05 Apr 2019 16:19:16 +0800</lastBuildDate>
+    <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>Hello 2019</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;voidwalker 的 Blog 在今天(2019.4.5)开通啦！&lt;/p&gt;
+
+&lt;p&gt;—— voidwalker 后记于 2019.4.5&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 05 Apr 2019 22:15:00 +0800</pubDate>
+        <link>http://localhost:4000/2019/04/05/hello-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/05/hello-2019/</guid>
+        
+        <category>生活</category>
+        
+        <category>Meta</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
