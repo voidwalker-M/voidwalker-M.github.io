@@ -1,0 +1,36 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+description: "Open-source projects and research code by Yaxin Ma."
+---
+
+<section class="page-head">
+  <h1 class="section-title">Projects</h1>
+  <p class="page-lead">Open-source work and research code. Edit the list in <code>_data/projects.yml</code>.</p>
+</section>
+
+<ul class="project-grid">
+  {% for project in site.data.projects %}
+  {%- assign link = project.url -%}
+  {%- if link == nil or link == '' -%}
+    {%- if project.repo and project.repo != '' -%}
+      {%- assign link = 'https://github.com/' | append: site.github_username | append: '/' | append: project.repo -%}
+    {%- endif -%}
+  {%- endif -%}
+  <li class="project-card">
+    <div class="project-top">
+      <h2 class="project-name">
+        {% if link and link != '' %}<a href="{{ link }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}
+      </h2>
+      {% if link and link != '' %}<a class="project-repo-link" href="{{ link }}" aria-label="Open {{ project.name }} on GitHub">↗</a>{% endif %}
+    </div>
+    <p class="project-desc">{{ project.description }}</p>
+    {% if project.tags and project.tags.size > 0 %}
+    <div class="project-tags">
+      {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

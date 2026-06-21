@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="back"><a href="{{ '/articles/' | relative_url }}">← All articles</a></p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- if page.tags and page.tags.size > 0 %}
+        <span class="dot">·</span>
+        {%- for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      {%- endif %}
+    </p>
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <p><a href="{{ '/articles/' | relative_url }}">← Back to all articles</a></p>
+  </footer>
+</article>

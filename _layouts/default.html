@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+      <nav class="site-nav" aria-label="Primary">
+        {%- assign cur = page.url | remove: site.baseurl -%}
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>About</a>
+        <a href="{{ '/projects/' | relative_url }}"{% if cur contains '/projects' %} class="active"{% endif %}>Projects</a>
+        <a href="{{ '/articles/' | relative_url }}"{% if cur contains '/articles' %} class="active"{% endif %}>Articles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="social">
+        {%- if site.github_username and site.github_username != '' -%}
+          <a href="https://github.com/{{ site.github_username }}" rel="me">GitHub</a>
+        {%- endif -%}
+        {%- if site.email and site.email != '' -%}
+          <a href="mailto:{{ site.email }}">Email</a>
+        {%- endif -%}
+        {%- if site.google_scholar and site.google_scholar != '' -%}
+          <a href="{{ site.google_scholar }}">Scholar</a>
+        {%- endif -%}
+        {%- if site.linkedin and site.linkedin != '' -%}
+          <a href="{{ site.linkedin }}">LinkedIn</a>
+        {%- endif -%}
+        {%- if site.twitter and site.twitter != '' -%}
+          <a href="{{ site.twitter }}">Twitter</a>
+        {%- endif -%}
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+      <p class="copyright">© {{ site.name }}. Built with Jekyll on GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>

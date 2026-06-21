@@ -1,0 +1,28 @@
+# =============================================================
+#  YOUR PROJECTS — edit this list to add / remove projects.
+#  Each entry becomes a card in the Projects section.
+#
+#  - name:  display title
+#  - repo:  the GitHub repo name (links to github.com/<username>/<repo>).
+#           Leave blank ("") and use `url:` instead for a non-GitHub link.
+#  - url:   optional custom link (overrides the repo link if set)
+#  - description: one or two sentences
+#  - tags:  optional list of keywords shown as small labels
+# =============================================================
+
+- name: "Coding Agent"
+  repo: "coding_agent"
+  description: "An autonomous coding agent that plans, edits, and verifies changes across a codebase."
+  tags: ["agents", "code-generation"]
+
+# Forge Agent is not on GitHub yet — once you push it, uncomment and set the repo name.
+# - name: "Forge Agent"
+#   repo: "forge-agent"
+#   description: "Experimental framework for building and orchestrating tool-using LLM agents."
+#   tags: ["agents", "orchestration", "tooling"]
+
+- name: "Add your next project"
+  repo: ""
+  url: ""
+  description: "Copy an entry above to add a project. Set `repo` to link to a GitHub repository, or `url` for any external link. Delete this placeholder when you're done."
+  tags: ["template"]
