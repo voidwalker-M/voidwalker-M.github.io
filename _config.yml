@@ -5,8 +5,8 @@
 
 # --- Who you are -------------------------------------------------
 name: "Yaxin Ma"
-tagline: "Researcher working on agents and how they think."
-email: "myaxinma@gmail.com"
+tagline: "Ph.D. student at the University of Florida working on trustworthy LLMs and agents."
+email: "yaxinma@ufl.edu"
 
 # Your GitHub username. Project links and the site URL derive from this.
 github_username: "voidwalker-M"
@@ -14,7 +14,7 @@ github_username: "voidwalker-M"
 # Optional extra links (leave blank "" to hide any of them)
 google_scholar: ""        # e.g. "https://scholar.google.com/citations?user=XXXX"
 twitter: ""               # e.g. "https://twitter.com/handle"
-linkedin: ""              # e.g. "https://www.linkedin.com/in/handle"
+linkedin: "https://www.linkedin.com/in/yaxin-ma"
 
 # --- Site URL ----------------------------------------------------
 # For a personal site, create a GitHub repo named  <username>.github.io
@@ -30,7 +30,7 @@ baseurl: ""
 
 # --- Build settings (you normally don't need to touch these) -----
 title: "Yaxin Ma"
-description: "Personal site of Yaxin Ma — projects and notes on how agents think."
+description: "Yaxin Ma — Ph.D. student at the University of Florida working on trustworthy LLMs and agents, evaluation, and uncertainty quantification."
 permalink: /articles/:year/:month/:day/:title/
 
 plugins:

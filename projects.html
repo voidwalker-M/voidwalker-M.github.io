@@ -7,7 +7,7 @@ description: "Open-source projects and research code by Yaxin Ma."
 
 <section class="page-head">
   <h1 class="section-title">Projects</h1>
-  <p class="page-lead">Open-source work and research code. Edit the list in <code>_data/projects.yml</code>.</p>
+  <p class="page-lead">Open-source systems and research projects.</p>
 </section>
 
 <ul class="project-grid">
@@ -23,7 +23,10 @@ description: "Open-source projects and research code by Yaxin Ma."
       <h2 class="project-name">
         {% if link and link != '' %}<a href="{{ link }}">{{ project.name }}</a>{% else %}{{ project.name }}{% endif %}
       </h2>
-      {% if link and link != '' %}<a class="project-repo-link" href="{{ link }}" aria-label="Open {{ project.name }} on GitHub">↗</a>{% endif %}
+      <div class="project-top-right">
+        {% if project.date and project.date != '' %}<span class="project-date">{{ project.date }}</span>{% endif %}
+        {% if link and link != '' %}<a class="project-repo-link" href="{{ link }}" aria-label="Open {{ project.name }}">↗</a>{% endif %}
+      </div>
     </div>
     <p class="project-desc">{{ project.description }}</p>
     {% if project.tags and project.tags.size > 0 %}

@@ -3,26 +3,41 @@
 #  Each entry becomes a card in the Projects section.
 #
 #  - name:  display title
+#  - date:  optional timeframe shown on the right (e.g. "Mar 2026 – Present")
 #  - repo:  the GitHub repo name (links to github.com/<username>/<repo>).
 #           Leave blank ("") and use `url:` instead for a non-GitHub link.
-#  - url:   optional custom link (overrides the repo link if set)
+#  - url:   optional custom link (overrides the repo link if set) — e.g. a paper.
 #  - description: one or two sentences
 #  - tags:  optional list of keywords shown as small labels
 # =============================================================
 
-- name: "Coding Agent"
+- name: "Autonomous LLM Coding Agent for Multi-Step Software Tasks"
+  date: "Mar 2026 – Present"
   repo: "coding_agent"
-  description: "An autonomous coding agent that plans, edits, and verifies changes across a codebase."
-  tags: ["agents", "code-generation"]
+  description: "An autonomous LLM coding agent for long-horizon software tasks: ReAct-style orchestration and LangGraph state machines explore repositories, edit code, run tests, and recover from failures. Built on a unified tool-use framework (code search, file editing, shell, git, pytest), a FAISS-based repository RAG pipeline, and Docker sandboxing — with self-reflection, loop detection, and step/token circuit breakers for safe, reliable execution."
+  tags: ["LLM agents", "LangGraph", "RAG", "Python"]
 
-# Forge Agent is not on GitHub yet — once you push it, uncomment and set the repo name.
-# - name: "Forge Agent"
-#   repo: "forge-agent"
-#   description: "Experimental framework for building and orchestrating tool-using LLM agents."
-#   tags: ["agents", "orchestration", "tooling"]
-
-- name: "Add your next project"
-  repo: ""
+- name: "Uncertainty Quantification & OOD Detection"
+  date: "Sep 2023 – Aug 2025"
+  # Add a paper link here when ready, e.g. url: "https://ieeexplore.ieee.org/document/XXXXXXX"
   url: ""
-  description: "Copy an entry above to add a project. Set `repo` to link to a GitHub repository, or `url` for any external link. Delete this placeholder when you're done."
-  tags: ["template"]
+  description: "A density-based uncertainty quantification method using kernel density estimation to estimate prediction confidence and detect out-of-distribution inputs. Published at IEEE IJCNN 2025."
+  tags: ["uncertainty", "OOD detection", "IJCNN 2025"]
+
+- name: "EEG Brain–Computer Interface — Hybrid CNN–Transformer"
+  date: "2020 – 2022"
+  url: ""
+  description: "An EEG decoding pipeline for assistive-device control, with a hybrid CNN–Transformer architecture for temporal signal modeling. Published at IEEE IJCNN 2022."
+  tags: ["EEG", "BCI", "transformers", "IJCNN 2022"]
+
+- name: "Medical Image Segmentation, Breast Cancer — U-Net"
+  date: "2019 – 2020"
+  url: ""
+  description: "A U-Net tumor segmentation pipeline with a curated labeled medical-imaging dataset; secured RMB 200K (~$29K) in research funding from United Imaging. Published at IEEE EMBC 2020 (oral)."
+  tags: ["medical imaging", "segmentation", "U-Net", "EMBC 2020"]
+
+- name: "Fish Image Classification — Project Lead, Team of 5"
+  date: "2017 – 2018"
+  url: ""
+  description: "Led development and mobile deployment of a CNN-based fish classification system and released a large-scale labeled dataset; received a National Innovation & Entrepreneurship Program Grant. Published at ICNC-FSKD 2018 (oral)."
+  tags: ["computer vision", "mobile", "team lead", "ICNC-FSKD 2018"]

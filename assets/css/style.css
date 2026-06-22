@@ -112,7 +112,9 @@ main.wrap { padding-top: 56px; padding-bottom: 72px; min-height: 60vh; }
 
 .about { margin-bottom: 56px; }
 .about p { margin: 0 0 18px; }
-.edit-note { margin: 0; }
+.about-list { margin: 0 0 18px; padding-left: 1.3em; }
+.about-list li { margin: 7px 0; }
+.about-subhead { font-size: 1.05rem; margin: 30px 0 10px; }
 
 section + section { margin-top: 8px; }
 .latest { margin-top: 12px; }
@@ -135,10 +137,12 @@ section + section { margin-top: 8px; }
   border-color: var(--accent-dim);
   box-shadow: 0 4px 18px rgba(45,91,227,0.08);
 }
-.project-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-.project-name { font-size: 1.2rem; margin: 0; }
+.project-top { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.project-name { font-size: 1.2rem; margin: 0; flex: 1; min-width: 0; }
 .project-name a { color: var(--ink); }
 .project-name a:hover { color: var(--accent); text-decoration: none; }
+.project-top-right { display: flex; align-items: baseline; gap: 12px; flex-shrink: 0; white-space: nowrap; }
+.project-date { color: var(--ink-faint); font-size: 0.82rem; }
 .project-repo-link { color: var(--ink-faint); font-size: 1.1rem; }
 .project-repo-link:hover { color: var(--accent); text-decoration: none; }
 .project-desc { color: var(--ink-soft); margin: 10px 0 0; font-size: 0.98rem; }
@@ -209,4 +213,6 @@ section + section { margin-top: 8px; }
   .post-item { grid-template-columns: 1fr; gap: 6px; }
   .post-date { padding-top: 0; }
   main.wrap { padding-top: 40px; }
+  .project-top { flex-wrap: wrap; gap: 4px 12px; }
+  .project-top-right { width: 100%; }
 }
